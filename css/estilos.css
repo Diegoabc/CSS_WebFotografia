@@ -1,5 +1,6 @@
 body{
   background-color: #02010a;
+
 }
 
 #contenido{
@@ -24,61 +25,23 @@ body{
 header{
   text-align: left;
   text-shadow: 2px 2px 1px #02010a;
-
-  flex: 2 1 ;
-
-
+  padding: 10px;
+  flex: 3 1;
 }
 
 nav{
-
-  flex: 1 2 ;
-  padding: 10px;
-
-  border: 1px solid red;
-
-  text-align: center;
-
-/*
+  flex: 1 3;
+  padding: 0 30px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  */
 }
-
-
-
-
-
 
 nav>a{
   text-decoration: none;
   color: white;
-  display: inline-block;
-  width: 30%;
 }
-
-/*nav*/
-nav>ul{
-  width: 100%;
-  border: 1px solid orange;
-  list-style: none;
-  display: flex;
-  flex-flow: row wrap;
-
-}
-
-nav>ul>li{
-  flex: 1 1;
-  text-align: center;
-  border: 1px solid green;
-}
-
-
-
-
-
 
 /*section*/
 section{
@@ -90,40 +53,56 @@ section{
 /*principal*/
 .principal{
   background-color: #82c3a6;
-  border: 1px solid white;
+  height: 500px;
 }
 
 .principal>img{
-  width: 70%;
-  position: relative;
-  padding-left: auto;
-  padding-right: auto;
-
+  height: 90%;
+  margin: 20px auto;
+  display: block;
 }
 
 /*secundaria*/
 .secundaria{
   background-color: #d5c75f;
-  border: 1px;
+  height: 350px;
   display: flex;
   flex-flow: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
-.sec1{
-  flex: 1 1 50%;
-}
-
-.sec2{
-  flex: 1 1 50%;
+.sec1,.sec2{
+  flex: 1 1;
+  text-align: center;
 }
 
 .secundaria img{
   width: 80%;
-  padding: 10% 10%;
-  border: 1px solid white;
+  margin: 20px auto;
+  display: block;
 }
 
-div>figure{
-  border: 1px solid white;
+/*footer*/
+footer{
+  background-color: #C6d5c5;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+footer>div{
+  flex: 1 1 25%;
+}
+
+figure{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.social img{
+  width: 15px;
+  margin: 3px;
 }
