@@ -1,0 +1,129 @@
+body{
+  background-color: #02010a;
+}
+
+#contenido{
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+}
+
+/*header*/
+#cabecera{
+  background-color: #5b7989;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-flow: row wrap;
+  /*font-size: 2vh;*/
+}
+
+header{
+  text-align: left;
+  text-shadow: 2px 2px 1px #02010a;
+
+  flex: 2 1 ;
+
+
+}
+
+nav{
+
+  flex: 1 2 ;
+  padding: 10px;
+
+  border: 1px solid red;
+
+  text-align: center;
+
+/*
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  */
+}
+
+
+
+
+
+
+nav>a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width: 30%;
+}
+
+/*nav*/
+nav>ul{
+  width: 100%;
+  border: 1px solid orange;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+nav>ul>li{
+  flex: 1 1;
+  text-align: center;
+  border: 1px solid green;
+}
+
+
+
+
+
+
+/*section*/
+section{
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+}
+
+/*principal*/
+.principal{
+  background-color: #82c3a6;
+  border: 1px solid white;
+}
+
+.principal>img{
+  width: 70%;
+  position: relative;
+  padding-left: auto;
+  padding-right: auto;
+
+}
+
+/*secundaria*/
+.secundaria{
+  background-color: #d5c75f;
+  border: 1px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+}
+
+.sec1{
+  flex: 1 1 50%;
+}
+
+.sec2{
+  flex: 1 1 50%;
+}
+
+.secundaria img{
+  width: 80%;
+  padding: 10% 10%;
+  border: 1px solid white;
+}
+
+div>figure{
+  border: 1px solid white;
+}
