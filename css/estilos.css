@@ -1,5 +1,8 @@
 body{
   background-color: #02010a;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 #contenido{
@@ -8,6 +11,7 @@ body{
   margin-left: auto;
   display: flex;
   flex-flow: row wrap;
+  animation: animacionPrincipal 1s;
 }
 
 /*header*/
@@ -15,19 +19,19 @@ body{
   width: 100%;
   background-color: #5b7989;
   color: #ffffff;
+  padding: 10px;
   border-radius: 10px 10px 0 0;
   border: 1px solid #5b7989;
 
   display: flex;
   flex-flow: row wrap;
-  /*font-size: 2vh;*/
 }
 
 header{
+  flex: 3 1;
   text-align: left;
   text-shadow: 2px 2px 1px #02010a;
-  padding: 10px;
-  flex: 3 1;
+  font-size: 1.2em;
 }
 
 nav{
@@ -53,7 +57,7 @@ nav>a{
 /*Página Principal*/
 /*principal*/
 .principal img{
-  width: 80%;
+  width: 90%;
   margin: 20px auto;
   display: block;
 }
@@ -69,6 +73,10 @@ nav>a{
 .sec1,.sec2{
   flex: 1 1;
   text-align: center;
+}
+
+.secundaria figcaption{
+  text-decoration: underline;
 }
 
 .secundaria img{
@@ -92,13 +100,13 @@ img{
 }
 
 /*Páginas secundarias*/
-.seccion_paisajes{
+.seccion_paisajes, .seccion_retratos{
   background-color: #d5c75f;
   display: flex;
   flex-flow: row wrap;
 }
 
-.seccion_paisajes figure{
+.seccion_paisajes figure, .seccion_retratos figure{
   flex: 1 1 33.33%;
   margin: 20px 0;
 }
@@ -132,7 +140,11 @@ footer{
   border: 1px solid #C6d5c5;
   display: flex;
   flex-flow: row wrap;
-  padding: 0 10px;
+  padding: 0 20px;
+}
+
+footer>div>h2{
+  font-size: 1.4em;
 }
 
 footer>div{
@@ -152,4 +164,49 @@ footer>div{
 
 .social figcaption{
   display: inline;
+}
+
+/*media queries*/
+@media (max-width:900px) {
+  #contenido{
+    width: 100%;
+  }
+
+  /*header*/
+  header{
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  nav{
+    flex: 1 1 100%;
+    justify-content: space-around;
+  }
+
+  /*section*/
+  /*página principal*/
+  .sec1,.sec2{
+    flex: 1 1 100%;
+  }
+  /*páginas secundarias*/
+  .seccion_paisajes figure, .seccion_retratos figure{
+    flex: 1 1 100%;
+  }
+
+  /*footer*/
+  footer>div{
+    flex: 1 1 100%;
+  }
+}
+
+/*animaciones*/
+@-webkit-keyframes animacionPrincipal{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100{
+    margin-top: 0%;
+  }
 }
